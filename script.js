@@ -1,41 +1,33 @@
-function showMsg(msg1,msg2){
-    var allMsg = msg1+msg2;
-    return allMsg;
-}
-
-function lastChar(arr){
-    var index = arr.join(,);
-    var a = index(index.length-1)
-    console.log(a);
-}
-
 function max(a,b){
     if(a>b){
-        console.log(a);
+        return a;
+    }
+    else if(a<b){
+        return b;
     }
     else{
-        console.log(b);
+        return '一樣大';
     }
 }
 
 function random(m){
-    console.log(Math.floor(Math.random()*m+1));
+    return Math.floor(Math.random()*m+1);
+}
+
+function lastChar(arr){
+    var c = arr.length;
+    return arr[c-1];
 }
 
 function squares(a,b){
-    var c;
-    c = a^2+b;
-    console.log(c);
+    return a^2+b;
 }
 
 function leapYear(y){
-    if(y%4===0 || y%100!=0){
-        console.log(true);
-    }
-    else if(y%400===0){
-        console.log(true);
+    if(y % 4 == 0 && y % 100 != 0 || y % 400 == 0){
+        return 'yes';
     }
     else{
-        console.log(false);
+        return 'no';
     }
 }
